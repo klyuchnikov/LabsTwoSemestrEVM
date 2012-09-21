@@ -1,0 +1,178 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_LABA77              ICON                    "laba77.ico"
+IDI_SMALL               ICON                    "small.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_LABA77 MENU 
+BEGIN
+    POPUP "&Файл"
+    BEGIN
+        MENUITEM "В&ыход",                      IDM_EXIT
+        MENUITEM "Односвязанный список",        IDM_LIST1
+        MENUITEM "Двухсвязанный список",        IDM_LIST2
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_LIST1 DIALOGEX 0, 0, 272, 186
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CAPTION | WS_SYSMENU
+CAPTION "Односвязанный список"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Вывести",IDC_PRINT,6,25,50,14,NOT WS_TABSTOP
+    PUSHBUTTON      "По заданию",IDC_TASK,215,25,50,14,NOT WS_TABSTOP
+    LISTBOX         IDC_LIST,7,43,258,136,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT,7,7,203,14,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "Разрушить",IDC_DESTROY,161,25,50,14,NOT WS_TABSTOP
+    DEFPUSHBUTTON   "Добавить",IDC_ADD,58,25,50,14,NOT WS_TABSTOP
+    PUSHBUTTON      "Очистить",IDC_CLEAR,109,25,50,14,NOT WS_TABSTOP
+    PUSHBUTTON      "OK",IDOK,215,7,50,14,NOT WS_TABSTOP
+END
+
+IDD_LIST2 DIALOGEX 0, 0, 327, 184
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,269,6,50,14
+    PUSHBUTTON      "Добавить в голову",IDC_ADDTOHEAD,269,23,50,22,BS_MULTILINE
+    LISTBOX         IDC_LIST2,7,36,258,141,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_FNAME,7,19,121,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NAME,132,19,133,14,ES_AUTOHSCROLL
+    LTEXT           "Введите Фамилию и имя:",IDC_STATIC,9,8,88,10
+    PUSHBUTTON      "Печеть вперед",IDC_PRINTNEXT,269,73,50,22,BS_MULTILINE
+    PUSHBUTTON      "Печать назад",IDC_PRINTBACK,269,98,50,22,BS_MULTILINE
+    PUSHBUTTON      "Удалить",IDC_DEL,270,140,50,14
+    PUSHBUTTON      "Добавление в хвост",IDC_ADDTOTAIL,269,48,50,22,BS_MULTILINE
+    PUSHBUTTON      "Поиск",IDC_SEARCH,270,123,50,14
+    PUSHBUTTON      "Очистить",IDC_CLEAR2,270,158,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_LIST1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 265
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 179
+    END
+
+    IDD_LIST2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 320
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 177
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_APP_TITLE           "laba77"
+    IDC_LABA77              "LABA77"
+END
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
